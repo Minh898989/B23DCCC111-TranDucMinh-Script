@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Category Display</title>
+<style>
+
+  .category {
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+
+  .category:hover {
+    color: blue;
+  }
+</style>
+</head>
+<body>
+<table style="background-color: aliceblue;border-style: inset;width: 40%;height: 100px;">
+<tr>
+  <th>
+    <p style="font-size: small;color: brown;"> Quy định sử dụng</p>
+<div class="category" id="category1">
+  <img src="pngtree-cartoon-mobile-phone-image_1127554.jpg" style="width:50px;height: 60px;" > <br>
+  Liên hệ kinh doanh
+  
+</div>
+  </th>
+  <th>
+    <p style="font-size: small;color: brown;"> Hướng dẫn thanh toán</p>
+<div class="category" id="category">
+  <img src="pngtree-cartoon-mobile-phone-image_1127554.jpg" style="width:50px;height: 60px;" > <br>
+    Hỗ trợ kĩ thuật
+</div>
+  </th>
+  <th>
+    <p style="font-size: small;color: brown;"> Download bảng giá</p>
+<div class="category" id="category3">
+  <img src="pngtree-cartoon-mobile-phone-image_1127554.jpg" style="width:50px;height: 60px;" > <br>
+   Góp ý công ty
+</div>
+  </th>
+</tr>
+</table>
+<script>
+ 
+  const categories = document.querySelectorAll('.category');
+
+  categories.forEach(category => {
+    category.addEventListener('mouseover', function() {
+      this.style.color = 'red';
+    });
+
+    category.addEventListener('mouseout', function() {
+      this.style.color = 'black';
+    });
+  });
+</script>
+
+</body>
+</html>
+

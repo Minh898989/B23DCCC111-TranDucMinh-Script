@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+  
+</head>
+    <style>
+        table, th, td {
+          border:2px solid rgba(8, 46, 71, 0.603);
+        }
+    
+      body {
+        background-color: rgba(170, 209, 209, 0.986);
+      }
+      h2{text-align: center;}
+      </style>
+<h2>Create Account</h2>  
+<form action="/action_page.php">
+   <table style width="100%">
+      <tr>
+        <td>
+           <label for="fname">First name*:</label><br>
+           <input type="text" id="fname" name="fname" value=""><br>
+        </td>
+        <td>
+           <label for="lname">Last name*:</label><br>
+           <input type="text" id="lname" name="lname" value=""><br>
+        </td>
+      </tr>
+      <tr>
+        <td>
+  <        <label for="email">Email*:</label><br>
+           <input type="text" id="email" name="email" value=""><br>
+        </td>
+        <td>
+           <label for="password">Password*:</label><br>
+           <input type="text" id="password" name="password" value=""><br>
+        </td>
+      </tr>
+       <tr>
+        <td>
+  <p> Gender</p>
+    <input type="radio" id="male" name="giới tính" value="Male">
+    <label for="html">Male</label><br>
+    <input type="radio" id="female" name="giới tính" value="Female">
+    <label for="css">Female</label><br>
+        </td>
+        <td>
+  <p> Check box</p>
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="music">
+    <label for="vehicle1"> Music</label><br>
+    <input type="checkbox" id="vehicle2" name="vehicle2" value="Sprot">
+    <label for="vehicle2"> Sprots</label><br>
+    <input type="checkbox" id="vehicle3" name="vehicle3" value="Travel">
+    <label for="vehicle3"> Travel</label>
+        </td>
+       </tr>
+   </table>
+   <table style width="100%">
+    <tr>
+    <td>
+    <form action="/submit_registration" method="post">
+          <label for="income">Mức thu nhập:</label>
+          <input type="range" id="income" name="income" min="0" max="10000000" step="100000" value="5000000" onchange="updateSliderValue(this.value)">
+          <output for="income" id="incomeValue">500,000 VNĐ</output>
+      </form>
+    
+      <script>
+        function updateSliderValue(value) {
+          document.getElementById('incomeValue').textContent = value.replace() + ' VNĐ';
+        }
+      </script>
+      <td>
+      <p> Job</p>
+      <select id="job" name="job">
+        <option value="Kĩ sư">Engineer</option>
+        <option value="Bác sĩ">Doctor</option>
+        <option value="Giáo viên">Teacher</option>
+        <option value="Cảnh sát">Police</option>
+      </select>
+      </td>
+    </tr>
+   </table>
+<p> Lưu </p>
+    <input type="submit" value="Submit">
+</body>
+</html>

@@ -1,0 +1,32 @@
+.a{
+    background-color:rgb(7, 83, 16);
+    word-spacing: 10px;
+    text-indent : 15px ;
+    color: white; 
+          }
+a{
+    color: white;
+}
+  .b2{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(248, 242, 242); 
+    border:1px solid #fffefe;  
+  }
+  table, th,td  {
+    border:1px solid #070707;
+
+        }
+.c{
+  background-color: #e3dcdc;
+  border: 2px #d5cfcf;
+
+   font-size: 15px;
+  line-height: 2}
+  a {
+     text-decoration: none;
+          }
+  .k {
+      display: flex;
+       align-items: center;
+  }
