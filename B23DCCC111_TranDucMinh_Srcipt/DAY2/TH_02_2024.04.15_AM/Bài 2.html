@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+//1
+let mang=[1,2,3,4,2,8,6,-1]
+let hamsosanh=(a,b)=>a-b;
+mang.sort(hamsosanh);
+document.write("max = ",mang[mang.length -1]+'<br>'); 
+//2
+function isSquareNumber(num) {
+    return Math.sqrt(num) % 1 === 0;
+}
+
+function findSquareNumbers(arr) {
+    const squareNumbers = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (isSquareNumber(arr[i])) {
+            squareNumbers.push(arr[i]);
+        }
+    }
+    return squareNumbers;
+}
+const squareNumbers = findSquareNumbers(mang);
+document.write("Các số chính phương trong mảng là:", squareNumbers+'<br>');
+    //3,
+    function sumArray(mang){
+    let sum = 0;{
+        for (let i = 0; i < mang.length; i++) {
+            if (mang[i]>=0)
+           
+        sum += mang[i];
+    }
+     
+  
+    return sum;
+}
+
+}
+
+let so1= mang.length
+let trungbinhcong = sumArray(mang)/ so1
+let largerNumbers = [];
+for (let i = 0; i < mang.length; i++) {
+    if (mang[i] >trungbinhcong )
+                     {
+        largerNumbers.push(mang[i]);
+    }
+}
+console.log(largerNumbers)
+document.write("Các số trong mảng lớn hơn", trungbinhcong, "là:", largerNumbers+'<br>');
+document.write("Tong", sumArray(largerNumbers)+'<br>');
+
+
+</script>
+</body>
+</html>
