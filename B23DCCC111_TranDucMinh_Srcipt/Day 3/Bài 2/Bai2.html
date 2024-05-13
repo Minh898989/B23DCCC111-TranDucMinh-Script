@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Add New Item</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#addButton").click(function(){
+        var newItem = $("#newItem").val().trim();
+        if(newItem !== "") {
+            $("#itemList").append("<li>" + newItem + "</li>");
+            $("#newItem").val("");
+        }
+    });
+});
+</script>
+</head>
+<body>
+
+<h2>Add New Item</h2>
+
+<input type="text" id="newItem" placeholder=" New item...">
+<button type="button" id="addButton">Add</button>
+
+<ul id="itemList">
+<p>Iphone 11</p>
+<p>Iphone 12</p>
+<p>Iphone 13</p>
+</ul>
+
+</body>
+</html>
