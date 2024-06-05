@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Redeclaring a Variable Using let</h2>
+
+<p id="demo"></p>
+<script>
+    const oldArray = [1, 2, 3];
+const newArray = [oldArray, 4, 5];
+console.log(newArray); 
+const olDArray = [1, 2, 3];
+const neWArray = [...oldArray, 4, 5];
+console.log(neWArray); 
+</script>
+
+</body>
+</html>
