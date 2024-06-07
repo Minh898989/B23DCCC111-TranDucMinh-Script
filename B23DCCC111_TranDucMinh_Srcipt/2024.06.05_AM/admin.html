@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <script>
+        // Check if user is not logged in
+        if (window.localStorage.getItem('loggedIn') !== 'true') {
+            window.location.href = 'login.html';
+        }
+    </script>
+</head>
+<body>
+    <h2>Welcome to Admin Page</h2>
+    <button id="logoutButton">Logout</button>
+
+    <script>
+        // Logout functionality
+        document.getElementById('logoutButton').addEventListener('click', function() {
+            window.localStorage.removeItem('loggedIn');
+            window.location.href = 'logout.php';
+        });
+    </script>
+</body>
+</html>
+
